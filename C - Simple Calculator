@@ -1,0 +1,13 @@
+
+string[] input = Console.ReadLine().Split();
+
+int X = int.Parse(input[0]);
+int Y = int.Parse(input[1]);
+
+int sum = X + Y;
+int mul = X * Y;
+int sub = X - Y;
+
+Console.WriteLine($"{X} + {Y} = {sum}");
+Console.WriteLine($"{X} * {Y} = {mul}");
+Console.WriteLine($"{X} - {Y} = {sub}");
