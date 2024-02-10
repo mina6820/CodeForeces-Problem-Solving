@@ -1,0 +1,9 @@
+string input = Console.ReadLine();
+ 
+for(int index =0; index < input.Length; index++)
+{
+    if (input[index] == ' ')
+        Console.Write("\n");
+    else
+        Console.Write(input[index]);
+}  
