@@ -1,0 +1,28 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/O
+
+string input = Console.ReadLine();
+string[] parts = input.Split(new char[] { '+', '-', '*', '/' });
+
+int A = int.Parse(parts[0]);
+char S = input[parts[0].Length];
+int B = int.Parse(parts[1]);
+
+int result = 0;
+
+switch (S)
+{
+    case '+':
+        result = A + B;
+        break;
+    case '-':
+        result = A - B;
+        break;
+    case '*':
+        result = A * B;
+        break;
+    case '/':
+        result = A / B;
+        break;
+}
+
+Console.WriteLine(result);
