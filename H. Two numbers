@@ -1,0 +1,12 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/H
+string[] input = Console.ReadLine().Split();
+
+
+decimal A = decimal.Parse(input[0]);
+decimal  B = decimal.Parse(input[1]);
+
+decimal div = A / B;
+
+Console.WriteLine($"floor {A} / {B} = {Math.Floor(div)}");
+Console.WriteLine($"ceil {A} / {B} = {Math.Ceiling(div)}");
+Console.WriteLine($"round {A} / {B} = {Math.Round(div, MidpointRounding.AwayFromZero)}");
