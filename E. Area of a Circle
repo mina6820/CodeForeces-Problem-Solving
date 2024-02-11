@@ -1,0 +1,8 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/E
+string input = Console.ReadLine();
+ 
+const double pi = 3.141592653;
+double Area = double.Parse(input)* double.Parse(input) * pi;
+ 
+ 
+Console.WriteLine("{0:F9}", Area);
