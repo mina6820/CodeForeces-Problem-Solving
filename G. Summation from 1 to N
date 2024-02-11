@@ -1,0 +1,8 @@
+//Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/G
+string input = Console.ReadLine();
+ 
+long N = long.Parse(input);
+ 
+ 
+long sum = N * (N + 1) / 2;
+Console.WriteLine(sum);
