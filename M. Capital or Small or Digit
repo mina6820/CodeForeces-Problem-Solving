@@ -1,0 +1,22 @@
+//Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/M
+char X = Console.ReadLine()[0];
+ 
+int asciiValue = (int)X;
+ 
+if (asciiValue >= 48 && asciiValue <= 57)
+{
+    Console.WriteLine("IS DIGIT");
+}
+else if ((asciiValue >= 65 && asciiValue <= 90) || (asciiValue >= 97 && asciiValue <= 122))
+{
+    Console.WriteLine("ALPHA");
+ 
+    if (asciiValue >= 65 && asciiValue <= 90)
+    {
+        Console.WriteLine("IS CAPITAL");
+    }
+    else
+    {
+        Console.WriteLine("IS SMALL");
+    }
+}
