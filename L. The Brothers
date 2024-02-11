@@ -1,0 +1,9 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/L
+string[] first_person = Console.ReadLine().Split();
+string[] second_person = Console.ReadLine().Split();
+
+string first = first_person[1];
+string second = second_person[1];
+
+string output = first == second ? "ARE Brothers" : "NOT";
+Console.WriteLine(output);
