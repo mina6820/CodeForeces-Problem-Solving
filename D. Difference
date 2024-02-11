@@ -1,0 +1,12 @@
+//Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/D
+string[] input = Console.ReadLine().Split();
+ 
+long A = int.Parse(input[0]);
+long B = int.Parse(input[1]);
+long C = int.Parse(input[2]);
+long D = int.Parse(input[3]);
+ 
+ 
+long dif = (A * B) - (C * D);
+ 
+Console.WriteLine($"Difference = {dif}");
