@@ -1,0 +1,15 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/N
+
+char X = Convert.ToChar(Console.ReadLine());
+ 
+
+if (char.IsLower(X))
+{
+    X = char.ToUpper(X);
+}
+else
+{
+    X = char.ToLower(X);
+}
+ 
+Console.WriteLine(X);
