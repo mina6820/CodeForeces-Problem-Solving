@@ -1,0 +1,11 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/R
+
+int days_input = Convert.ToInt32(Console.ReadLine());
+ 
+int years = days_input / 365;
+int months = (days_input % 365) / 30;
+int days = (days_input % 365) % 30;
+ 
+Console.WriteLine($"{years} years");
+Console.WriteLine($"{months} months");
+Console.WriteLine($"{days} days");
