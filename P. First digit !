@@ -1,0 +1,9 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/P
+
+string input = Console.ReadLine();
+ 
+int firstDigit = Convert.ToInt32(input[0]);
+ 
+string output = firstDigit % 2 == 0 ? "EVEN" : "ODD";
+ 
+Console.WriteLine(output);
