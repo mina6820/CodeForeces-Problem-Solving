@@ -1,0 +1,28 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/Q
+string[] input = Console.ReadLine().Split();
+double xCoordinate = Convert.ToDouble(input[0]);
+double yCoordinate = Convert.ToDouble(input[1]);
+
+if (xCoordinate == 0 && yCoordinate == 0)
+{
+    Console.WriteLine("Origem");
+}
+else if (xCoordinate == 0)
+{
+    Console.WriteLine("Eixo Y");
+}
+else if (yCoordinate == 0)
+{
+    Console.WriteLine("Eixo X");
+}
+else
+{
+    if (xCoordinate > 0)
+    {
+        Console.WriteLine(yCoordinate > 0 ? "Q1" : "Q4");
+    }
+    else
+    {
+        Console.WriteLine(yCoordinate > 0 ? "Q2" : "Q3");
+    }
+}
