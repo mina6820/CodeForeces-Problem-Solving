@@ -1,0 +1,22 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/T
+string[] inputs = Console.ReadLine().Split();
+long A = long.Parse(inputs[0]);
+long B = long.Parse(inputs[1]);
+long C = long.Parse(inputs[2]);
+
+// Find minimum, middle, and maximum values
+long min = Math.Min(Math.Min(A, B), C);
+long max = Math.Max(Math.Max(A, B), C);
+long mid = A + B + C - min - max;
+
+// Print sorted numbers
+Console.WriteLine(min);
+Console.WriteLine(mid);
+Console.WriteLine(max);
+
+Console.WriteLine();
+
+// Print the numbers in the sequence as they were read
+Console.WriteLine(A);
+Console.WriteLine(B);
+Console.WriteLine(C);
