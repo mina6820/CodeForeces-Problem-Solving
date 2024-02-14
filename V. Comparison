@@ -1,0 +1,32 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/V
+
+string input = Console.ReadLine();
+string[] parts = input.Split(new char[] { '>', '<', '=' });
+ 
+ 
+long first_num = long.Parse(parts[0]);
+char symbol = input[parts[0].Length];
+long second_num = long.Parse(parts[1]);
+ 
+ 
+switch (symbol)
+{
+   case '>':
+       if (first_num > second_num)
+           Console.WriteLine("Right");
+       else
+           Console.WriteLine("Wrong");
+       break;
+   case '<':
+       if (first_num < second_num)
+           Console.WriteLine("Right");
+       else
+           Console.WriteLine("Wrong");
+       break;
+   case '=':
+       if (first_num == second_num)
+           Console.WriteLine("Right");
+       else
+           Console.WriteLine("Wrong");
+       break;
+}
