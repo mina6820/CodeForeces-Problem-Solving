@@ -1,0 +1,12 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/U
+
+double N = double.Parse(Console.ReadLine());
+ 
+if (N % 1 == 0)
+{
+    Console.WriteLine($"int {(int)N}");
+}
+else
+{
+    Console.WriteLine($"float {(int)N} {(N % 1):0.###}");
+}
