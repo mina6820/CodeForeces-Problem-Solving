@@ -1,16 +1,17 @@
 // Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/X
 
-string[] parts = Console.ReadLine().Split(' ');
+string[] input = Console.ReadLine().Split();
+int l1 = int.Parse(input[0]);
+int r1 = int.Parse(input[1]);
+int l2 = int.Parse(input[2]);
+int r2 = int.Parse(input[3]);
 
-long l1 = long.Parse(parts[0]);
-long r1 = long.Parse(parts[1]);
+int left = Math.Max(l1, l2);
+int right = Math.Min(r1, r2);
 
-long l2 = long.Parse(parts[2]);
-long r2 = long.Parse(parts[3]);
-
-if( !(l2 > r1 || l1 > r2))
+if (left <= right)
 {
-    Console.WriteLine($"{l2} {r1}");
+    Console.WriteLine($"{left} {right}");
 }
 else
 {
