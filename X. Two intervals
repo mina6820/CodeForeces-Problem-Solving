@@ -1,0 +1,19 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/X
+
+string[] parts = Console.ReadLine().Split(' ');
+
+long l1 = long.Parse(parts[0]);
+long r1 = long.Parse(parts[1]);
+
+long l2 = long.Parse(parts[2]);
+long r2 = long.Parse(parts[3]);
+
+if( !(l2 > r1 || l1 > r2))
+{
+    Console.WriteLine($"{l2} {r1}");
+}
+else
+{
+    Console.WriteLine("-1");
+}
+        
