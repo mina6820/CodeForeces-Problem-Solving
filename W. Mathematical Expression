@@ -1,0 +1,30 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/W
+
+string[] parts = Console.ReadLine().Split('=');
+
+string equation = parts[0];
+long result = long.Parse(parts[1]);
+string[] equation_operands = equation.Split(new char[] { '+', '-', '*' });
+
+long first_operand = long.Parse(equation_operands[0]);
+char symbol = equation[equation_operands[0].Length];
+long second_operand = long.Parse(equation_operands[1]);
+
+long real_result = 0;
+bool final = false;
+switch (symbol)
+{
+    case '+':
+        final = first_operand + second_operand == result;
+        real_result = first_operand + second_operand;
+        break;
+    case '-':
+        final = first_operand - second_operand == result;
+        real_result = first_operand - second_operand;
+        break;
+    case '*':
+        final = first_operand * second_operand == result;
+        real_result = first_operand * second_operand;
+        break;
+}
+Console.WriteLine(final ? "Yes" : real_result);
