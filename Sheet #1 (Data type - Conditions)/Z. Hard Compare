@@ -1,0 +1,11 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/Z
+string[] parts = Console.ReadLine().Split(' ');
+
+long A = long.Parse(parts[0]);
+long B = long.Parse(parts[1]);
+long C = long.Parse(parts[2]);
+long D = long.Parse(parts[3]);
+
+
+bool result = B * Math.Log(A) > D* Math.Log(C);
+Console.WriteLine(result ? "YES" : "NO");
