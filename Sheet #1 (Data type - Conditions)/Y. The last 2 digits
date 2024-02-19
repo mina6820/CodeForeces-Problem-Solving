@@ -1,0 +1,11 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/Y
+string[] parts = Console.ReadLine().Split(' ');
+ 
+long n1 = long.Parse(parts[0]);
+long n2 = long.Parse(parts[1]);
+long n3 = long.Parse(parts[2]);
+long n4 = long.Parse(parts[3]);
+ 
+long multiply = ((n1 % 100) * (n2 % 100) * (n3 % 100) * (n4 % 100)) % 100;
+ 
+Console.WriteLine($"{multiply:D2}");
