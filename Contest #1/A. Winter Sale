@@ -1,1 +1,9 @@
-// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/A
+// problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/A
+string[] parts = Console.ReadLine().Split(' ');
+
+double Discount_percent = double.Parse(parts[0]);
+double Price_after_disc = double.Parse(parts[1]);
+
+double real_price = Price_after_disc / (1 - (Discount_percent / 100.0));
+
+Console.WriteLine($"{real_price}");
