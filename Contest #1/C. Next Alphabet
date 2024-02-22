@@ -1,0 +1,16 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/C
+
+char character = Console.ReadLine()[0];
+byte asciiValue = Convert.ToByte(character);
+char next_char;
+ 
+if (character == 'z')
+{
+    next_char = 'a';
+}
+else
+{
+    next_char = Convert.ToChar(asciiValue + 1);
+}
+
+Console.WriteLine(next_char);
