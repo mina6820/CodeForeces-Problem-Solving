@@ -1,0 +1,23 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/B
+
+string[] input = Console.ReadLine().Split(' ');
+long a = long.Parse(input[0]);
+long b = long.Parse(input[1]);
+long k = long.Parse(input[2]);
+ 
+if (a % k == 0 && b % k == 0)
+{
+    Console.WriteLine("Both");
+}
+else if (a % k == 0 && b % k != 0)
+{
+    Console.WriteLine("Memo");
+}
+else if (a % k != 0 && b % k == 0)
+{
+    Console.WriteLine("Momo");
+}
+else
+{
+    Console.WriteLine("No One");
+}
