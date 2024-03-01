@@ -1,0 +1,17 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/D
+
+long[] numbers = Array.ConvertAll(Console.ReadLine().Split(" "), long.Parse);
+long a = numbers[0];
+long b = numbers[1];
+long c = numbers[2];
+long d = numbers[3];
+if (a - b * c == d || a - b + c == d ||
+    a * b - c == d || a + b - c == d ||
+    a + b * c == d || a * b + c == d)
+{
+    Console.WriteLine("YES");
+}
+else
+{
+    Console.WriteLine("NO");
+}
