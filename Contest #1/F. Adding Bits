@@ -1,0 +1,26 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/F
+
+string[] input = Console.ReadLine().Split();
+
+int firstNumber = int.Parse(input[0]);
+int secondNumber = int.Parse(input[1]);
+
+string firstBinary = Convert.ToString(firstNumber, 2).PadLeft(32, '0');
+string secondBinary = Convert.ToString(secondNumber, 2).PadLeft(32, '0');
+
+string outputBinary = "";
+
+for (int i = 0; i < 32; i++)
+{
+    if (firstBinary[i] == secondBinary[i])
+    {
+        outputBinary += "0";
+    }
+    else
+    {
+        outputBinary += "1";
+    }
+}
+
+int outputDecimal = Convert.ToInt32(outputBinary, 2);
+Console.WriteLine(outputDecimal);
