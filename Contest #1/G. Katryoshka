@@ -1,0 +1,23 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/G
+
+string[] input = Console.ReadLine().Split();
+ 
+long eyes = long.Parse(input[0]);
+long mouths = long.Parse(input[1]);
+long bodies = long.Parse(input[2]);
+ 
+long number_of_dolls = 0;
+ 
+ 
+long min_number = new[] { eyes, mouths, bodies }.Min();
+ 
+eyes -= min_number;
+mouths -= min_number;
+bodies -= min_number;
+ 
+number_of_dolls += min_number;
+ 
+long mn = Math.Min((eyes / 2), bodies);
+ 
+number_of_dolls += mn;
+Console.WriteLine(number_of_dolls);
