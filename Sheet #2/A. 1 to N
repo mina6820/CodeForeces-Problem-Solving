@@ -1,0 +1,6 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/A
+
+int size = int.Parse(Console.ReadLine());
+
+for(int i = 1; i <= size; i++)
+    Console.WriteLine(i);
