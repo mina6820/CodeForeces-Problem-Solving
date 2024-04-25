@@ -1,0 +1,10 @@
+// Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/B
+
+
+int n = int.Parse(Console.ReadLine());  
+
+for (int i = 1; i <= n; i++)
+{
+    if(i % 2 ==0)
+        Console.WriteLine(i);
+}
