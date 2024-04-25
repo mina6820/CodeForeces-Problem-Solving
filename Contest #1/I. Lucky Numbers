@@ -1,0 +1,17 @@
+//Problem Link: https://codeforces.com/group/MWSDmqGsZm/contest/326175/problem/I
+
+string input = Console.ReadLine();
+
+int firstDigit = input[0] - '0';
+int secondDigit = input[1] - '0';
+
+if (firstDigit == 0 || secondDigit == 0)
+    Console.WriteLine("YES");
+else if (firstDigit % secondDigit==0 || secondDigit % firstDigit == 0)
+{
+    Console.WriteLine("YES");
+}
+else
+{
+    Console.WriteLine("NO");
+}
